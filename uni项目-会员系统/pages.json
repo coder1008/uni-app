@@ -1,0 +1,151 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",//首页文件路径
+			"style": {
+				"navigationBarTitleText": "首页",//头部标题
+				"enablePullDownRefresh": false	//是否开启下拉刷新 
+			}
+		},
+		{
+			"path": "pages/news/news",//资讯页路径
+			"style": {
+				"navigationBarTitleText": "资讯",//头部标题
+				"enablePullDownRefresh": false
+			}
+		},	
+		{
+			"path" : "pages/news/news_detail/news_detail",//资讯详细页路径
+			"style": {
+				"navigationBarTitleText": "资讯详细",//头部标题
+				"enablePullDownRefresh": false
+			}
+		},
+        {
+            "path" : "pages/add_pic/add_pic",//发布信息页路径
+			"style": {
+				"navigationBarTitleText": "发布信息",//头部标题
+				"enablePullDownRefresh": false
+			}
+        },
+		{
+			"path" : "pages/pic/pic",//图库页路径
+			"style": {
+				"navigationBarTitleText": "图库",//头部标题
+				"enablePullDownRefresh": true
+			}
+		},	
+		{
+			"path": "pages/pic/pic_detail/pic_detail",//图库详细页路径
+			"style": {
+				"navigationBarTitleText": "详情",
+				"navigationBarBackgroundColor": "#000000",
+				"backgroundColor": "#000000",
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [{
+							"type": "share"
+						}]
+					}
+				},
+				"h5": {
+					"titleNView": {
+						"buttons": [{
+							"type": "favorite"
+						}]
+					}
+				}
+			}
+		},	
+		{
+            "path" : "pages/pic/pic_list/pic_list",//图库分类页路径
+			"style": {
+				"navigationBarTitleText": "专题",//头部标题
+				"enablePullDownRefresh": true
+			}
+        },				
+		{
+			"path": "pages/member/member",//我的
+			"style": {
+				"navigationBarTitleText": "个人中心",//头部标题
+				"enablePullDownRefresh": false
+			}
+		},	
+		{
+			"path": "pages/member/reg/reg",//会员注册页面路径
+			"style": {
+				"navigationBarTitleText": "注册",//头部标题
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/member/login/login",//会员登录页面路径
+			"style": {
+				"navigationBarTitleText": "登录",//头部标题
+				"enablePullDownRefresh": false
+			}
+		},
+        {
+            "path" : "pages/member/pwd/pwd",//找回密码页面路径
+			"style": {
+				"navigationBarTitleText": "找回密码",//头部标题
+				"enablePullDownRefresh": false
+			}
+        },		
+		{
+			"path": "pages/member/about/about",//关于我们页面路径
+			"style": {
+				"navigationBarTitleText": "关于我们",//头部标题
+				"enablePullDownRefresh": false
+			}
+		}
+    ],
+	
+	//app底部导航栏
+	"tabBar": {
+			"color": "#444444", //tab 上的文字默认颜色，仅支持十六进制颜色
+			"selectedColor": "#FF80AB", //tab 上的文字选中时的颜色，仅支持十六进制颜色
+			"borderStyle": "black", //tabbar上边框的颜色， 仅支持 black / white
+			"backgroundColor": "#ffffff", //tab 的背景色，仅支持十六进制颜色
+			"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/index-0.png",
+				"selectedIconPath": "static/index-1.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/news/news",
+				"iconPath": "static/hot-0.png",
+				"selectedIconPath": "static/hot-1.png",
+				"text": "资讯"
+			},
+			{
+				"pagePath": "pages/add_pic/add_pic",
+				"iconPath": "static/add.png",
+				"selectedIconPath": "static/addactive.png",
+				"text": ""
+			},				
+			{
+				"pagePath": "pages/pic/pic",
+				"iconPath": "static/tag-0.png",
+				"selectedIconPath": "static/tag-1.png",
+				"text": "图库"
+			},			
+			{
+				"pagePath": "pages/member/member",
+				"iconPath": "static/center-0.png",
+				"selectedIconPath": "static/center-1.png",
+				"text": "我的"
+			}		
+			]
+
+		},
+		
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "my-app",
+		"navigationBarBackgroundColor": "#000000",
+		"backgroundColor": "#F8F8F8"
+	}
+}
